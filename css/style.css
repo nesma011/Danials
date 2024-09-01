@@ -1,0 +1,367 @@
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+/*navbar*/
+nav
+{
+    z-index: 999;
+}
+nav li a
+{
+    position: relative;
+}
+nav li a::after
+{
+    content:'' ;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    background-color: white;
+    transition:width 0.5s ;
+
+}
+
+
+nav li a.active::after
+{
+    width: 80%;
+}
+
+
+
+
+
+/*section home*/
+div.home
+{
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+div.home h3
+{
+    font-weight: 800;
+    font-size: 50px;
+}
+div.home h1
+{
+    font-weight: 200;
+    font-size: 60px;
+}
+
+.layer h1::after {
+    content: " |";
+    animation: typing 3s linear 1s infinite alternate;
+}
+
+@keyframes typing {
+    0% {
+        content: " des|";
+    }
+
+    10% {
+        content: " design|";
+    }
+
+    20% {
+        content: " designer .|";
+    }
+
+    30% {
+        content: " dev|";
+    }
+
+   40% {
+        content: " develo|";
+    }
+
+    50% {
+        content: " developer|";
+    }
+
+    60% {
+        content: " lar|";
+    }
+
+   70% {
+        content: " larry |";
+    }
+
+    80% {
+        content: " larry dan|";
+    }
+
+    90% {
+        content: " larry danial|";
+    }
+
+    100% {
+        content: " larry danials .|";
+    }
+
+
+}
+
+/*section about*/
+section#about div.col-lg-5
+{
+    position: relative;
+}
+section#about div.col-lg-5::before
+{
+    content: '';
+    background-image: url(../imgs/dots.png);
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    background-repeat: repeat;
+    z-index: -1;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+
+section#about button.btn-dark:hover
+{
+background-color: white;
+color: black;
+}
+
+
+/*services*/
+
+ div.title h3
+{
+    position: relative;
+    font-weight:900;
+    font-size: 40px;
+    z-index: 4;
+   
+}
+
+  div.title h3::after
+ {
+    position: absolute;
+    content: "";
+    background-image: url("../imgs/dots.png");
+    width: 15%;
+    height: 30px;
+    background-repeat: repeat;
+    bottom: -10px;
+    left: 43%;
+    z-index: -1;
+  }
+
+  section#services div.topic h4
+  {
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 18px;
+  }
+
+  section#services div.topic
+  {
+    box-shadow: 4px 8px 8px rgb(228, 227, 227);
+  }
+
+  section#services div.topic i
+  {
+    transition: all 1s;
+
+  }
+
+  section#services div.topic:hover i
+  {
+    background-color: black !important;
+    color: white;
+    
+  }
+
+
+  /*works*/
+  .nav-pills .nav-link, .nav-pills .show>.nav-link
+   {
+    color: black !important;
+    background-color: white !important;
+    font-weight: 800;
+  }
+   div.row div.layer i
+   {
+    transition: all 1s;
+   }
+   div.row div.layer i:hover
+   {
+  color: black !important;
+  background-color: white !important;
+   }
+   div.row div.image
+   {
+    position: relative;
+   }
+
+   div.row div.layer
+   {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.93);
+    opacity: 0;
+    transition: all 1s;
+
+
+   }
+   div.row div.image:hover div.layer
+   {
+    
+    opacity: 1;
+   }
+
+   ul.nav li button
+{
+    position: relative;
+}
+ul.nav li button::after
+{
+    content:'' ;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    background-color: black;
+    transition:width 0.5s ;
+
+}
+
+
+ul.nav li button.active::after
+{
+    width: 80%;
+}
+
+/*clients*/
+section#client img
+{
+    width: 100px !important; 
+} 
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 10px;
+  }
+
+  /*counter*/
+  section.counter div.row h3
+  {
+    font-weight: 800 ;
+  }
+
+
+
+  /*team*/
+  section#team div.row div.details
+  {
+   background-color: rgb(87, 87, 87);
+   font-family: "Montserrat";
+   
+  }
+ 
+
+  div.row div.layer-white
+  {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   background-color: rgba(255, 255, 255, 0.93);
+   opacity: 0;
+   transition: all 0.5s;
+
+
+  }
+  div.row div.inner:hover div.layer-white
+  {
+   transform:rotateY(180deg);
+   opacity: 1;
+  }
+  div.row div.inner:hover i
+  {
+    transform:rotateY(180deg) ;
+
+  }
+
+  div.row div.img img
+  {
+    transition: all 1s ;
+
+  }
+  div.row div.img:hover img
+  {
+    transform: scale(1.2);
+  }
+
+  div.inner i
+  {
+    transition: all 0.5s;
+
+  }
+  div.inner i:hover 
+  {
+    background-color: white !important;
+    color: black !important;
+  }
+
+
+  /*contact*/
+  section#contact div.row div.col-lg-4
+  {
+    transition: all 0.5s;
+
+  }
+
+  section#contact div.row div.col-lg-4:hover i 
+  {
+    background-color: black !important;
+    color: white !important;
+  }
+  section#contact div.row input:focus
+  {
+    outline: 0;
+  }
+  section#contact div.row textarea:focus
+  {
+    outline: 0;
+  }
+
+  section#contact button
+
+  {
+    transition: all 0.5s;
+
+  }
+  section#contact button:hover
+  {
+    background-color: white !important;
+    color: black !important;
+    
+  }
+
+ 
